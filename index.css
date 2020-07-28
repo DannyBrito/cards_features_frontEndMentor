@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --neutral-very-dark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+    --neutral-very-light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--neutral-very-light-gray);
+}
+
+.mainContainer{
+    height: 100%;
+    padding: 15% 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.lg-size{
+    font-size: 20px;
+    color: var(--neutral-very-dark-blue);
+}
+
+.introTitle{
+    font-weight: 200;
+}
+.introSubtitle{
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.introInfo{
+    color: var(--neutral-grayish-blue);
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0 4px;
+}
+
+.cardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: 100%;
+    border-radius: 5px;
+    padding: 1.5rem;
+    background-color: white;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 3px 24px 88px -29px rgba(179,179,179,1);
+    -moz-box-shadow: 3px 24px 88px -29px rgba(179,179,179,1);
+    box-shadow: 3px 24px 88px -29px rgba(179,179,179,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardTitle{
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--neutral-very-dark-blue)
+}
+
+.cardInfo{
+    color: var(--neutral-grayish-blue);
+}
+
+.cardImageWrapper{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.supervisorCard{
+    border-top: var(--primary-cyan) solid 5px;
+
+}
+.teamCard{
+    border-top: var(--primary-red) solid 5px;
+}
+.karmaCard{
+    border-top: var(--primary-orange) solid 5px;
+}
+.calculatorCard{
+    border-top: var(--primary-blue) solid 5px;
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    display: none;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
